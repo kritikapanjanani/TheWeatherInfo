@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-15417342d295584c702",applicationID:"525287958"};;/*! For license information please see nr-loader-rum-1.252.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>v,Mt:()=>b,C5:()=>s,DL:()=>w,OP:()=>S,lF:()=>T,Yu:()=>x,Dg:()=>m,CX:()=>c,GE:()=>_,sU:()=>R});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",g=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},h="All configuration objects require an agent identifier!";function v(e){if(!e)throw new Error(h);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function m(e,t){if(!e)throw new Error(h);p[e]=(0,i.D)(t,g());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(h);var r=v(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!A[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return A[e]}function _(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const x=(0,n.mF)().o;var E=r(385),D=r(6818);const k={buildEnv:D.Re,customTransaction:void 0,disabled:!1,distMethod:D.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(E._A?.performance?.timeOrigin||E._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+E._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof E._A.XMLHttpRequest?.prototype?.addEventListener,version:D.q4,denyList:void 0},j={};function S(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!j[e])throw new Error("Runtime for ".concat(e," was never set"));return j[e]}function R(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");j[e]=(0,i.D)(t,k);const r=(0,n.ek)(e);r&&(r.runtime=j[e])}function T(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,q4:()=>n});const n="1.252.0",i="PROD",o="CDN"},385:(e,t,r)=>{"use strict";r.d(t,{Nk:()=>d,Tt:()=>s,_A:()=>o,cv:()=>l,iS:()=>a,il:()=>n,ux:()=>c,v6:()=>i,w1:()=>u});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),s=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),c=s&&"undefined"==typeof SharedWorker,u=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(n&&window.document.documentMode)),d=!!o.navigator?.sendBeacon,l=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(u(e),!e||!s[e].get(t)||r)return c(t);s[e].get(t).staged=!0;const a=[...s[e]];function c(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}a.every((e=>{let[t,r]=e;return r.staged}))&&(a.sort(((e,t)=>e[1].priority-t[1].priority)),a.forEach((t=>{let[r]=t;s[e].delete(r),c(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=v(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([g,e,r,a]);return a},get:m,listeners:v,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function h(e,t){n[e]=v(e).concat(t)}function v(e){return n[e]||[]}function m(t){return d[t]=d[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,Object.keys(u.backlog).forEach((e=>{delete u.backlog[e]}))}d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>o,IK:()=>c,oD:()=>i,uT:()=>s,wO:()=>a});const n="NRBA",i=144e5,o=18e5,a={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},s={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},c={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>d,T:()=>l});var n=r(8325),i=r(5546),o=r(3325),a=r(385);const s="newrelic";const c={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},u=new Set;function d(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{a._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7530:(e,t,r)=>{"use strict";r.d(t,{j:()=>b});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),g=r(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var h=r(2825);const v=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let m=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:A,info:w,loader_config:_,runtime:x={loaderType:b},exposed:E=!0}=t;const D=(0,g.gG)();w||(A=D.init,w=D.info,_=D.loader_config),(0,i.Dg)(e.agentIdentifier,A||{}),(0,i.GE)(e.agentIdentifier,_||{}),w.jsAttributes??={},d.v6&&(w.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,w);const k=(0,i.P_)(e.agentIdentifier),j=[w.beacon,w.errorBeacon];m||(k.proxy.assets&&(v(k.proxy.assets),j.push(k.proxy.assets)),k.proxy.beacon&&j.push(k.proxy.beacon),p(),(0,g.EZ)("activatedFeatures",h.T)),x.denyList=[...k.ajax.deny_list||[],...k.ajax.block_internal?j:[]],(0,i.sU)(e.agentIdentifier,x),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const g={};var p=a.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),w(v,n,!0,o||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{g[e]=w(v,e,!0,"api")})),g.addPageAction=w(v,"addPageAction",!0,n.D.pageAction),g.setCurrentRouteName=w(v,"routeName",!0,n.D.spa),g.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,w(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g.recordReplay=function(){(0,o.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,p),(0,o.p)("recordReplay",[],void 0,n.D.sessionReplay,p)},g.pauseReplay=function(){(0,o.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,p),(0,o.p)("pauseReplay",[],void 0,n.D.sessionReplay,p)},g.interaction=function(){return(new y).get()};var A=y.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,p),(0,o.p)(m+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(h.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],r),e}finally{h.emit("fn-end",[(0,s.z)()],r)}}}};function w(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function _(){r.e(75).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>{(0,l.Z)("Downloading runtime APIs failed..."),(0,c.L)(e,"api",!0)}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{A[e]=w(m,e,void 0,n.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b2)((()=>_()),!0):_(),g}(e.agentIdentifier,y)),void 0===e.exposed&&(e.exposed=E),m=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.252.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.252.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={75:"sha512-85KXSsv643MTRPulZfmcwj8IKIbJeT9JfNpsSBckCZNUr+o/ILbmpOISx04Ol69WzHRZplUy/y2FaJ3KUChaTw=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.252.0.PROD"]=self["webpackChunk:NRBA-1.252.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(1926);var e=i(50);class t{#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e("recordReplay")}pauseReplay(){return this.#e("pauseReplay")}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,957));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName,!0),o(!1)}};l.il?(0,d.b2)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var g=i(7633);class p extends f{static featureName=g.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,g.t,r),this.importAggregator()}}var h=i(1117),v=i(1284);class m extends h.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,v.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,v.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=A(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function A(e){return"object"!=typeof e?[]:(0,v.D)(e,w)}function w(e,t){return t}var _=i(8632),x=i(4402),E=i(4351);var D=i(5546),k=i(7956),j=i(3239),S=i(7894),R=i(9251);class T extends f{static featureName=R.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,r),l.il&&((0,k.N)((()=>(0,D.p)("docHidden",[(0,S.z)()],void 0,R.t,this.ee)),!0),(0,j.bP)("pagehide",(()=>(0,D.p)("winPagehide",[(0,S.z)()],void 0,R.t,this.ee))),this.importAggregator())}}var I=i(3081);class P extends f{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,x.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new m({agentIdentifier:this.agentIdentifier}),this.features={},(0,_.h5)(r,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){try{const t=a(this.agentIdentifier),n=[...this.desiredFeatures];n.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),n.forEach((n=>{if(t[n.featureName]||n.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(n.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(n.featureName," is enabled but one or more dependent features has been disabled (").concat((0,E.P)(i),"). This may cause unintended consequences or missing data...")),this.features[n.featureName]=new n(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,_.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}}({features:[p,T,P],loaderType:"lite"})})()})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="h2dYVFKWkPT1TjaKPbkA6dVHbLionrF7buKI0QD7">
+<title>Fiery Sun icon vector graphics | Free SVG</title>
+
+<meta name="description" content="Clip art of colorful yellow planet.">
+<meta name="author" content="Vedran">
+
+
+<link href="https://fonts.googleapis.com" rel="’preconnect’" crossorigin>
+<link href="https://www.google-analytics.com" rel="’preconnect’" crossorigin>
+<link href="https://pagead2.googlesyndication.com" rel="’preconnect’" crossorigin>
+<link href="https://partner.googleadservices.com" rel="’preconnect’" crossorigin>
+<link href="https://googleads.g.doubleclick.net" rel="’preconnect’" crossorigin>
+<link href="https://www.googletagservices.com" rel="’preconnect’" crossorigin>
+<link media="all" type="text/css" rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css    ">
+
+
+<link media="all" type="text/css" rel="stylesheet" href="https://freesvg.org/css/frontend.css?id=66ea0829c6ba37f9dffe">
+<link media="all" type="text/css" rel="stylesheet" href="https://freesvg.org/js/select2/select2.min.css">
+<script data-ad-client="ca-pub-4767662663033227" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script>
+            window.Laravel = {"csrfToken":"h2dYVFKWkPT1TjaKPbkA6dVHbLionrF7buKI0QD7"}        </script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147217457-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147217457-1');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EM93X0EMX8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EM93X0EMX8');
+</script>
+</head>
+<body id="app-layout">
+<div id="app">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top black-bg">
+<div class="container">
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsMain" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<a class="navbar-brand" href="https://freesvg.org"><img height="40px" src="/img/svg-logo-4.png" /></a>
+<div class="collapse navbar-collapse" id="navbarsMain">
+<div class="navbar-nav mr-auto">
+<a class="nav-link " href="https://freesvg.org">
+<i class="fa fa-home"></i>
+</a>
+<a class="nav-link " href="/pages/about-us">About</a>
+<a class="nav-link" rel="nofollow" href="https://creativecommons.org/publicdomain/zero/1.0/ " target="_blank">License</a>
+<a class="nav-link " href="/contact">Contact</a>
+<a class="nav-link " href="https://forum.freesvg.org" target="_blank">Forum</a>
+</div>
+<div class="navbar-nav">
+<a class="nav-link " href="https://freesvg.org/login">Login</a>
+<a class="nav-link " href="https://freesvg.org/register">Register</a>
+</div>
+</div>
+</div>
+</nav>
+<section class="highlight">
+<div class="cover  bg-overlay-black-50" style="background-image: url(/img/detail-background-svg.jpg);    background-size: cover;">
+<div class="slider-content-middle">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12">
+<div class="slider-content text-center">
+<h1 class="text-white mt-20 d-none d-lg-block"> Fiery Sun icon vector graphics </h1>
+<form action="/search/" method="POST">
+<div class="row justify-content-center form pb-20 mt-50">
+<div class="col-md-5 ">
+<input type="search" class="form-control" name="q" placeholder="Search here">
+<p class="d-block mt-5 popular">Popular SVG vectors:
+<a href="https://freesvg.org/tag/War">War </a>,
+<a href="https://freesvg.org/tag/peace">Peace </a>,
+<a href="https://freesvg.org/tag/cricut-svg">Cricut svg </a>,
+<a href="https://freesvg.org/tag/Ukraine">Ukraine</a>,
+<a href="https://freesvg.org/tag/love">Love </a>,
+<a href="https://freesvg.org/search?query=svg%20cut&q=svg%20cut">Svg cut file </a>
+</p>
+</div>
+<div class="col-lg-2 col-sm-3 col-xs-12 mt-sm-20">
+<input type="submit" class="button btn-block" value="Search">
+</div>
+<input type="hidden" name="_token" value="h2dYVFKWkPT1TjaKPbkA6dVHbLionrF7buKI0QD7"> </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="main-container container-fluid py-4">
+<div class="content">
+<div class="main-body-wrapper">
+<div class="main-body">
+<div class="page-title-wrapper">
+<div class="container-fluid mb-40 text-center">
+
+
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<h2>Fiery Sun icon vector graphics</h2>
+<div class="row-fluid detail-wrapper">
+<div class="main-image">
+<div class="main-image-photo text-center">
+<div itemscope itemtype="http://schema.org/ImageObject">
+<meta itemprop="license" content="https://creativecommons.org/publicdomain/zero/1.0/">
+<meta itemprop="description" content=" Clip art of colorful yellow planet.">
+<meta itemprop="acquireLicensePage" content="https://freesvg.org/fiery-sun-icon-vector-graphics">
+<meta itemprop="isAccessibleForFree" content="true">
+<meta itemprop="isFamilyFriendly" content="true">
+<meta itemprop="representativeOfPage" content="true">
+<meta itemprop="thumbnailUrl" content="https://freesvg.org/storage/img/thumb/maslenica.png">
+<meta itemprop="contentUrl" content="https://freesvg.org/img/maslenica.png">
+<meta itemprop="caption" content=" Fiery Sun icon vector graphics">
+<span itemprop="creator" itemtype="https://schema.org/Organization" itemscope>
+<meta itemprop="name" content="OpenClipart" />
+</span>
+</div>
+<img itemprop="contentUrl" src="/img/maslenica.png" alt="Fiery Sun icon vector graphics" class="vec_veliki">
+</div>
+<div class="download">
+<a href="/download/31597" class="btn btn-green btn-lg">
+Download SVG </a></div>
+<div class="download">
+<a href="https://freesvg.org/converts/31597/2400" class="btn btn-blue btn-sm pt-2 pb-2">
+Large PNG <small>2400px </small> </a>
+<a href="https://freesvg.org/converts/31597/300" class="btn btn-blue btn-sm pt-2 pb-2">
+Small PNG <small>300px </small> </a>
+</div>
+</div>
+<div class="sponsored-main-detail">
+<div class="istock-main-detail">
+<div class="istock">
+<div class="istock-header"><img src="/img/sponsor_shutterstock.png" alt>
+<p>
+<a style="color:#1a1a1a;text-decoration: underline" href="https://shutterstock.7eer.net/c/2022575/1424089/1305" id="919290">
+Get 15% off at Shutterstock! Use: FSVG15 at checkout! </a>
+<img height="0" width="0" src="https://shutterstock.7eer.net/i/2022575/1424089/1305" style="position:absolute;visibility:hidden;" border="0" />
+<div class="clearfix"></div>
+</div>
+<div class="istock-img" id="shutterstock-images">
+<div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="photo-details">
+<div class="row mb-5">
+<div class="col-sm-12">
+<h4>Share</h4>
+<div class="footer-social-big mt-20 mb-20 panel" data-id="31597">
+<ul>
+<li class="facebook mr-5"><a href="#" onclick="    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+      'facebook-share-dialog', 
+      'width=626,height=436'); 
+    return false;" alt="FB"><i class="fa fa-facebook"> </i><span>Facebook</span></a> </li>
+<li class="pinterest mr-5"><a href="//pinterest.com/pin/create/button/?url=https%3A%2F%2Ffreesvg.org%2Ffiery-sun-icon-vector-graphics&media=https%3A%2F%2Ffreesvg.org%2Fimg%2Fmaslenica.png&description=Fiery Sun icon vector graphics" data-pin-do="buttonPin" data-pin-config="none"> <i class="fa fa-pinterest"> </i><span>Pinterest</span> </a></li>
+<li class="twitter mr-5"><a href="https://twitter.com/share?text=https://freesvg.org/fiery-sun-icon-vector-graphics"> <i class="fa fa-twitter"> </i><span>Twitter</span> </a></li>
+<li class="like mr-5"><a> <i id="like31597" class="fa fa-heart "></i> </a> <span id="like31597-bs3">0</span></li>
+<div class="like-btn">
+</div>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<h4>Description </h4>
+<p>
+Clip art of colorful yellow planet.
+</p>
+</div>
+</div>
+<div class="row">
+</div>
+<div class="row">
+<div class="col-sm-12">
+<h4>License</h4>
+<p>
+<a about="/img/maslenica.png" rel="license" href="https://creativecommons.org/licenses/publicdomain/" target="_blank">Public Domain</a></p>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6">
+<h4>More about SVG</h4>
+<p><i class="fa fa-eye"></i>
+Size 0.03 MB</p>
+<p><i class="fa fa-calendar"></i>
+Date: 19/08/2015 </p>
+<p>
+<i class="fa fa-download"></i> No. of downloads: 98 </p>
+</div>
+<div class="col-lg-6">
+<h4> SVG published by</h4>
+<p>
+<a href="https://freesvg.org/by/OpenClipart"> OpenClipart </a> </p>
+<p>
+<p> <i class="fa fa-key"></i> SVG ID: 31597 </p>
+</div>
+</div
+             
+						
+						
+							<div class='row single-tags'>
+<div class="col-sm-12">
+<h4>Tags</h4>
+<div class="single-photo-tags">
+<span><a href="https://freesvg.org/tag/face">face</a></span>
+<span><a href="https://freesvg.org/tag/line%20art">line art</a></span>
+<span><a href="https://freesvg.org/tag/outline">outline</a></span>
+<span><a href="https://freesvg.org/tag/sun">sun</a></span>
+<span><a href="https://freesvg.org/tag/sun">sun</a></span>
+<span><a href="https://freesvg.org/tag/weather">weather</a></span>
+<span><a href="https://freesvg.org/tag/magical-adventure"> Magical Adventure</a></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div id="photos" class="related-photos">
+<h3> Related SVG images</h3>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="vector-clip-art-of-brightly-shining-daylight-sun">
+<img src="/storage/img/thumb/sunshine-matthew-gates-01.png" alt="Vector clip art of brightly shining daylight sun" title="Vector clip art of brightly shining daylight sun">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="vector-graphics-of-big-nosed-sun">
+<img src="/storage/img/thumb/sun_18042015.png" alt="Vector graphics of big nosed sun" title="Vector graphics of big nosed sun">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="happy-sun-vector-drawing">
+<img src="/storage/img/thumb/happy_sun_gm.png" alt="Happy sun vector drawing" title="Happy sun vector drawing">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="smiling-cartoon-sun-vector-clip-art">
+<img src="/storage/img/thumb/Sun-02-Smile.png" alt="Smiling cartoon Sun vector clip art" title="Smiling cartoon Sun vector clip art">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="sun-line-art-vector-graphics">
+<img src="/storage/img/thumb/sun_line_art_happy_sun_gm.png" alt="Sun line art vector graphics" title="Sun line art vector graphics">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="illustration-of-eclipse-of-the-sun">
+<img src="/storage/img/thumb/freedo-eclipse.png" alt="Illustration of eclipse of the sun" title="Illustration of eclipse of the sun">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="happy-sun-vector-graphics">
+<img src="/storage/img/thumb/Happy_Stick_Figure_Sun.png" alt="Happy sun vector graphics" title="Happy sun vector graphics">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="outline-symbol-for-partly-cloudy-sky-vector-illustration">
+<img src="/storage/img/thumb/cloudy-outline.png" alt="Outline symbol for partly cloudy sky vector illustration" title="Outline symbol for partly cloudy sky vector illustration">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="color-symbol-for-partly-cloudy-sky-vector-graphics">
+<img src="/storage/img/thumb/semicloudyday.png" alt="Color symbol for partly cloudy sky vector graphics" title="Color symbol for partly cloudy sky vector graphics">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="sun-with-face">
+<img src="/storage/img/thumb/Sun-with-a-face-by-Rones.png" alt="Sun with face" title="Sun with face">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="johnny-automatic-old-sun">
+<img src="/storage/img/thumb/johnny-automatic-old-sun.png" alt="old sun" title="old sun">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="vector-graphics-of-artistic-sun-icon">
+<img src="/storage/img/thumb/Sun_Icon.png" alt="Vector graphics of artistic sun icon" title="Vector graphics of artistic sun icon">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="clip-art-of-black-and-white-cloudy-with-some-sun-day-sign">
+<img src="/storage/img/thumb/cloudy-BW.png" alt="Clip art of black and white cloudy with some sun day sign" title="Clip art of black and white cloudy with some sun day sign">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="old-woodcut-sun-vector-image">
+<img src="/storage/img/thumb/johnny_automatic_sun_woodcut.png" alt="Old woodcut sun vector image" title="Old woodcut sun vector image">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="vector-drawing-of-color-weather-forecast-icon-for-sunny-sky">
+<img src="/storage/img/thumb/weather-clear.png" alt="Vector drawing of color weather forecast icon for sunny sky" title="Vector drawing of color weather forecast icon for sunny sky">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="oval-shaped-sun-vector-illustration">
+<img src="/storage/img/thumb/johnny_automatic_oval_sun.png" alt="Oval-shaped sun vector illustration" title="Oval-shaped sun vector illustration">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="ornamented-sun-vector-illustration">
+<img src="/storage/img/thumb/johnny_automatic_ornate_sun.png" alt="Ornamented sun vector illustration" title="Ornamented sun vector illustration">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="vector-image-of-pastel-colored-moon-sign">
+<img src="/storage/img/thumb/spite_moon.png" alt="Vector image of pastel colored moon sign" title="Vector image of pastel colored moon sign">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="glowing-sun-vector-clip-art">
+<img src="/storage/img/thumb/sun-abstract-design.png" alt="Glowing sun vector clip art" title="Glowing sun vector clip art">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="outline-vector-illustration-of-sun-and-moon">
+<img src="/storage/img/thumb/Sun-and-Moon-Outline-by--Merlin2525.png" alt="Outline vector illustration of Sun and Moon" title="Outline vector illustration of Sun and Moon">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="bright-golden-sun-vector-image">
+<img src="/storage/img/thumb/The-Sun-by--Merlin2525.png" alt="Bright golden Sun vector image" title="Bright golden Sun vector image">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="machovka-summer-sun">
+<img src="/storage/img/thumb/Machovka-summer-sun.png" alt="summer sun" title="summer sun">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="smiling-sun-vector-illustration-vector">
+<img src="/storage/img/thumb/sol.png" alt="Smiling Sun vector illustration. Vector" title="Smiling Sun vector illustration. Vector">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="symbol-for-sun-with-bad-weather-clouds-and-rain-vector-image">
+<img src="/storage/img/thumb/Raseone_Weather.png" alt="Symbol for Sun with bad weather clouds and rain vector image" title="Symbol for Sun with bad weather clouds and rain vector image">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="johnny-automatic-sun">
+<img src="/storage/img/thumb/johnny-automatic-sun.png" alt="sun" title="sun">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="sun-animation">
+<img src="/storage/img/thumb/9va-liftarn-Sol-de-Mayo-Bandera-de-Argentina.png" alt="Sun animation" title="Sun animation">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="sun-4">
+<img src="/storage/img/thumb/sun-4.png" alt="Sun" title="Sun">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="light-clouds-with-some-sun-weather-symbol-vector-image">
+<img src="/storage/img/thumb/Anonymous_simple_weather_symbols_3.png" alt="Light clouds with some sun weather symbol vector image" title="Light clouds with some sun weather symbol vector image">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="cloudy-with-some-sun-weather-symbol-vector-image">
+<img src="/storage/img/thumb/Anonymous_simple_weather_symbols_4.png" alt="Cloudy with some sun weather symbol vector image" title="Cloudy with some sun weather symbol vector image">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="outline-weather-forecast-icon-for-snow-vector-illustration">
+<img src="/storage/img/thumb/snowy-outline.png" alt="Outline weather forecast icon for snow vector illustration" title="Outline weather forecast icon for snow vector illustration">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="bright-sun-vector-drawing">
+<img src="/storage/img/thumb/nicubunu_Weather_Symbols_Sun.png" alt="Bright sun vector drawing" title="Bright sun vector drawing">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="old-sun">
+<img src="/storage/img/thumb/OldSunColour.png" alt="Old sun" title="Old sun">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="sun-vector-image">
+<img src="/storage/img/thumb/mcol_sun.png" alt="Sun vector image" title="Sun vector image">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="vector-illustration-of-weather-forecast-color-symbol-for-sunny-with-rain">
+<img src="/storage/img/thumb/sun_rain.png" alt="Vector illustration of weather forecast color symbol for sunny with rain" title="Vector illustration of weather forecast color symbol for sunny with rain">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="vector-drawing-of-rain-with-sunny-periods-weather-color-map-symbol">
+<img src="/storage/img/thumb/weather.png" alt="Vector drawing of rain with sunny periods weather color map symbol" title="Vector drawing of rain with sunny periods weather color map symbol">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="golden-sun-and-moon-vector-clip-art">
+<img src="/storage/img/thumb/Sun-and-Moon-by--Merlin2525.png" alt="Golden Sun and Moon vector clip art" title="Golden Sun and Moon vector clip art">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="vector-image-of-weather-forecast-color-symbol-for-sunny-sky">
+<img src="/storage/img/thumb/sivvus_weather_symbols_1.png" alt="Vector image of weather forecast color symbol for sunny sky" title="Vector image of weather forecast color symbol for sunny sky">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="vector-clip-art-of-weather-forecast-color-symbol-for-partly-cloudy-sky">
+<img src="/storage/img/thumb/sivvus_weather_symbols_2.png" alt="Vector clip art of weather forecast color symbol for partly cloudy sky" title="Vector clip art of weather forecast color symbol for partly cloudy sky">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="vector-graphics-of-weather-forecast-color-symbol-for-brightly-sunny-sky">
+<img src="/storage/img/thumb/sunny.png" alt="Vector graphics of weather forecast color symbol for brightly sunny sky" title="Vector graphics of weather forecast color symbol for brightly sunny sky">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="mystica-happy-sun">
+<img src="/storage/img/thumb/mystica-Happy-Sun.png" alt="Happy Sun" title="Happy Sun">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="sun-collection">
+<img src="/storage/img/thumb/Sun-collection.png" alt="Sun collection" title="Sun collection">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="sun-with-sunglasses-vector-drawing">
+<img src="/storage/img/thumb/1276118096.png" alt="Sun with sunglasses vector drawing" title="Sun with sunglasses vector drawing">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="vector-graphics-of-light-rain-with-sunny-intervals-weather-color-map-symbol">
+<img src="/storage/img/thumb/weather.png" alt="Vector graphics of light rain with sunny intervals weather color map symbol" title="Vector graphics of light rain with sunny intervals weather color map symbol">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="vector-image-of-color-weather-forecast-icon-for-sunny-intervals">
+<img src="/storage/img/thumb/weather-few-clouds.png" alt="Vector image of color weather forecast icon for sunny intervals" title="Vector image of color weather forecast icon for sunny intervals">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="vector-drawing-of-weather-forecast-color-symbol-for-sunny-to-cloudy-sky">
+<img src="/storage/img/thumb/sunny_to_cloudy.png" alt="Vector drawing of weather forecast color symbol for sunny to cloudy sky" title="Vector drawing of weather forecast color symbol for sunny to cloudy sky">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="weather-forecast-symbols">
+<img src="/storage/img/thumb/1299239216.png" alt="Weather forecast symbols" title="Weather forecast symbols">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="weather-icons">
+<img src="/storage/img/thumb/statusy_gg.png" alt="Weather icons" title="Weather icons">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="sun-vector-illustraton">
+<img src="/storage/img/thumb/sun_4.png" alt="Sun vector illustraton" title="Sun vector illustraton">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="red-orange-and-yellow-sun-vector-drawing">
+<img src="/storage/img/thumb/1275981472.png" alt="Red, orange and yellow Sun vector drawing" title="Red, orange and yellow Sun vector drawing">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="pale-sun-vector-image">
+<img src="/storage/img/thumb/sunburst.png" alt="Pale sun vector image" title="Pale sun vector image">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="sun-vector-image10956">
+<img src="/storage/img/thumb/1364063978.png" alt="Sun vector image" title="Sun vector image">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="darker-sun">
+<img src="/storage/img/thumb/1409776028.png" alt="Darker sun" title="Darker sun">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="1433924438">
+<img src="/storage/img/thumb/1433924438.png" alt="Yellow Sun icon" title="Yellow Sun icon">
+</a>
+</div></div>
+<div class="photo text-center">
+<div class="photo-thumbnail-wrap">
+<a href="machovka-sun">
+<img src="/storage/img/thumb/Machovka-sun.png" alt="sun" title="sun">
+</a>
+</div></div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+<div class="sidebar-wrapper">
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4767662663033227" data-ad-slot="2867614028" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div class="sidebar-element tags page-tags">
+<h3>Related tags</h3>
+<div class="tags-wrapper">
+<span><a href="/tag/8-bit">8-bit</a></span>
+<span><a href="/tag/9va-mac">9va-mac</a></span>
+<span><a href="/tag/9va-pi">9va-pi</a></span>
+<span><a href="/tag/aiflowers">aiflowers</a></span>
+<span><a href="/tag/animals">animals</a></span>
+<span><a href="/tag/art">art</a></span>
+<span><a href="/tag/astro">astro</a></span>
+<span><a href="/tag/astrological">astrological</a></span>
+<span><a href="/tag/astrology">astrology</a></span>
+<span><a href="/tag/astronomy">astronomy</a></span>
+<span><a href="/tag/beach">beach</a></span>
+<span><a href="/tag/Bild">Bild</a></span>
+<span><a href="/tag/black-white">black-white</a></span>
+<span><a href="/tag/blue">blue</a></span>
+<span><a href="/tag/book">book</a></span>
+<span><a href="/tag/bright">bright</a></span>
+<span><a href="/tag/BuJo">BuJo</a></span>
+<span><a href="/tag/card">card</a></span>
+<span><a href="/tag/cartoon">cartoon</a></span>
+<span><a href="/tag/charts">charts</a></span>
+<span><a href="/tag/circle">circle</a></span>
+<span><a href="/tag/clear">clear</a></span>
+<span><a href="/tag/clip">clip</a></span>
+<span><a href="/tag/clip art">clip art</a></span>
+<span><a href="/tag/clip-art">clip-art</a></span>
+<span><a href="/tag/clipart">clipart</a></span>
+<span><a href="/tag/cloud">cloud</a></span>
+<span><a href="/tag/clouds">clouds</a></span>
+<span><a href="/tag/cloudy">cloudy</a></span>
+<span><a href="/tag/cold">cold</a></span>
+<span><a href="/tag/collection">collection</a></span>
+<span><a href="/tag/color">color</a></span>
+<span><a href="/tag/colour">colour</a></span>
+<span><a href="/tag/comic">comic</a></span>
+<span><a href="/tag/communicator">communicator</a></span>
+<span><a href="/tag/contour">contour</a></span>
+<span><a href="/tag/cor">cor</a></span>
+<span><a href="/tag/cosmic">cosmic</a></span>
+<span><a href="/tag/dark">dark</a></span>
+<span><a href="/tag/day">day</a></span>
+<span><a href="/tag/design">design</a></span>
+<span><a href="/tag/drawing">drawing</a></span>
+<span><a href="/tag/drops">drops</a></span>
+<span><a href="/tag/eclipse">eclipse</a></span>
+<span><a href="/tag/emoji">emoji</a></span>
+<span><a href="/tag/emoticon">emoticon</a></span>
+<span><a href="/tag/ESL">ESL</a></span>
+<span><a href="/tag/externalsource">externalsource</a></span>
+<span><a href="/tag/face">face</a></span>
+<span><a href="/tag/favorites">favorites</a></span>
+<span><a href="/tag/fix">fix</a></span>
+<span><a href="/tag/flag">flag</a></span>
+<span><a href="/tag/flower">flower</a></span>
+<span><a href="/tag/forecast">forecast</a></span>
+<span><a href="/tag/Formen">Formen</a></span>
+<span><a href="/tag/fun">fun</a></span>
+<span><a href="/tag/gesture">gesture</a></span>
+<span><a href="/tag/glasses">glasses</a></span>
+<span><a href="/tag/graphics">graphics</a></span>
+<span><a href="/tag/happy">happy</a></span>
+<span><a href="/tag/head">head</a></span>
+<span><a href="/tag/healing">healing</a></span>
+<span><a href="/tag/heraldry">heraldry</a></span>
+<span><a href="/tag/hot">hot</a></span>
+<span><a href="/tag/icon">icon</a></span>
+<span><a href="/tag/Icons">Icons</a></span>
+<span><a href="/tag/illustration">illustration</a></span>
+<span><a href="/tag/jupiter">jupiter</a></span>
+<span><a href="/tag/keyword">keyword</a></span>
+<span><a href="/tag/librarian">librarian</a></span>
+<span><a href="/tag/light">light</a></span>
+<span><a href="/tag/line">line</a></span>
+<span><a href="/tag/line art">line art</a></span>
+<span><a href="/tag/line-art">line-art</a></span>
+<span><a href="/tag/logger">logger</a></span>
+<span><a href="/tag/Logo">Logo</a></span>
+<span><a href="/tag/Magical Adventure">Magical Adventure</a></span>
+<span><a href="/tag/map">map</a></span>
+<span><a href="/tag/mars">mars</a></span>
+<span><a href="/tag/merch">merch</a></span>
+<span><a href="/tag/meteorology">meteorology</a></span>
+<span><a href="/tag/mond">mond</a></span>
+<span><a href="/tag/moon">moon</a></span>
+<span><a href="/tag/mouth">mouth</a></span>
+<span><a href="/tag/nature">nature</a></span>
+<span><a href="/tag/nose">nose</a></span>
+<span><a href="/tag/odd">odd</a></span>
+<span><a href="/tag/old">old</a></span>
+<span><a href="/tag/orange">orange</a></span>
+<span><a href="/tag/organ">organ</a></span>
+<span><a href="/tag/outline">outline</a></span>
+<span><a href="/tag/oval">oval</a></span>
+<span><a href="/tag/pattern">pattern</a></span>
+<span><a href="/tag/planet">planet</a></span>
+<span><a href="/tag/rain">rain</a></span>
+<span><a href="/tag/rainy">rainy</a></span>
+<span><a href="/tag/remix">remix</a></span>
+<span><a href="/tag/retro">retro</a></span>
+<span><a href="/tag/season">season</a></span>
+<span><a href="/tag/set">set</a></span>
+</div>
+</div>
+<h3 class="content-heading">More from <a href="https://freesvg.org/by/OpenClipart"> OpenClipart </a> </h3>
+<div class="clearfix">
+<div class="more-from-site">
+<a href="vector-image-of-red-line-art-decorative-border"><img src="/storage/img/thumb/1708720626decorative-border.png" width="80px" heigth="80px" alt="Vector image of red line art decorative border"></a>
+<a href="saudi-arabia-map-flag-khryt-alsaaody"><img src="/storage/img/thumb/1684001569Flag_map_of_Saudi_Arabia.svg.png" width="80px" heigth="80px" alt="Saudi Arabia Map Flag خريطة السعودية"></a>
+<a href="flag-map-of-rif-khryt-jmhory-alryf"><img src="/storage/img/thumb/1706229908Rif_territory_loc_map.png" width="80px" heigth="80px" alt="Flag map of Rif خريطة جمهورية الريف"></a>
+<a href="ludo-piece-scarlett-red"><img src="/storage/img/thumb/1270695513.png" width="80px" heigth="80px" alt="Ludo Piece - Scarlett Red"></a>
+<a href="decorative-angel-polyprismatic-pattern"><img src="/storage/img/thumb/decorative-angel-polyprismatic.png" width="80px" heigth="80px" alt="Decorative Angel Polyprismatic Pattern"></a>
+<a href="number-three-in-neon-lights"><img src="/storage/img/thumb/1286138205.png" width="80px" heigth="80px" alt="Number three in neon lights"></a>
+<a href="ouroboros-dog"><img src="/storage/img/thumb/1537948462.png" width="80px" heigth="80px" alt="Ouroboros Dog"></a>
+<a href="flag-map-of-egypt-khryt-msr"><img src="/storage/img/thumb/Egypt-Flag-Map.png" width="80px" heigth="80px" alt="Flag map of Egypt خريطة مصر"></a>
+<a href="algeria-map-flag-khryt-oaalm-aljzaer"><img src="/storage/img/thumb/1677276569Flag_map_of_Algeria.svg.png" width="80px" heigth="80px" alt="Algeria Map Flag   خريطة وعلم الجزائر"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<footer class="footer page-section-pt black-bg">
+<div class="container">
+<div class="row">
+<div class="col-lg-3  col-sm-6 xs-mb-30">
+<div class="footer-hedding">
+<h6 class="text-white mb-30 mt-10 text-uppercase">Share</h6>
+<div class="footer-social-big">
+<ul>
+<li class="facebook"><a href="#" onclick="    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+      'facebook-share-dialog', 
+      'width=626,height=436'); 
+    return false;" alt="FB"> <i class="fa fa-facebook"> </i><span>Facebook</span></a> </li>
+<li class="pinterest"><a href="//pinterest.com/pin/create/button/?url=https%3A%2F%2Ffreesvg.org%2Ffiery-sun-icon-vector-graphics&media=https%3A%2F%2Ffreesvg.org%2Fimg%2Fmain_bg.jpg&description=Rebuilding open clip art database and community" data-pin-do="buttonPin" data-pin-config="none"> <i class="fa fa-pinterest"> </i><span>Pinterest</span> </a></li>
+<li class="twitter"><a href="https://twitter.com/share?text=https://freesvg.org/fiery-sun-icon-vector-graphics"> <i class="fa fa-twitter"> </i><span>Twitter</span> </a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-2 col-sm-6 sm-mb-30">
+<div class="footer-useful-link footer-hedding">
+<h6 class="text-white mb-30 mt-10 text-uppercase">Useful links</h6>
+<ul>
+<li><a rel="nofollow" href="http://inkscape.org/">Inkscape</a> </li>
+<li><a rel="nofollow" href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">What is SVG</a> </li>
+<li><a rel="nofollow" href="https://svgedit.netlify.app/editor/index.html">SVG Edit</a> </li>
+<li><a rel="nofollow" href="http://www.drawsvg.org/drawsvg.html"> Draw SVG</a> </li>
+<li><a rel="nofollow" href="http://www.w3.org/Graphics/SVG/">SVG Logo</a> </li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 sm-mb-30 xs-mb-30">
+<h6 class="text-white mb-30 mt-10 text-uppercase">About us</h6>
+<p>FreeSVG.org offers free vector images in SVG format with Creative Commons 0 license (public domain).
+You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
+<br/>It is absolutely not required, but if you like this website, any mention of or link back is highly appreciated.</p>
+</div>
+<div class="col-lg-2 col-sm-6 sm-mb-30">
+<div class="footer-useful-link footer-hedding">
+<h6 class="text-white mb-30 mt-10 text-uppercase">Site links</h6>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/pages/about-us">About</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a rel="nofollow" href="https://creativecommons.org/publicdomain/zero/1.0/ " target="_blank">Public domain license</a></li>
+<li><a rel="nofollow" href="https://forum.freesvg.org " target="_blank">Forum
+</div>
+</div>
+<div class="col-lg-2 col-sm-6 sm-mb-30">
+<a href="https://shutterstock.7eer.net/c/2022575/816854/1305" target="_top" id="816854"><img src="//a.impactradius-go.com/display-ad/1305-816854" border="0" alt width="300" height="250" /></a><img height="0" width="0" src="https://shutterstock.7eer.net/i/2022575/816854/1305" style="position:absolute;visibility:hidden;" border="0" />
+</div>
+<div class="footer-widget mt-60 ">
+<div class="row">
+<div class="col-lg-6 col-md-6">
+<p class="mt-15">
+<a href="#"> Free SVG </a> 2019-2023 </p>
+</div>
+<div class="col-lg-6 col-md-6 ">
+<div class="footer-social mt-10">
+<ul class="text-left text-md-right">
+<li class="list-inline-item"><a href="/pages/api-and-usage">API</a> </li>
+<li class="list-inline-item"><a href="/pages/terms-and-conditions">Terms and conditions </a> </li>
+<li class="list-inline-item"><a href="/pages/privacy-policy">Privacy Policy </a> </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer> 
+<script defer src="//stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+<script src="https://freesvg.org/js/frontend.js?id=fd71e92afda009fad5db"></script>
+<script>
+$(document).ready(function() {
+    let svgSlug = "fiery-sun-icon-vector-graphics";  // Assuming the slug is available in this variable
+
+    $.ajax({
+        url: '/get-images/' + svgSlug,
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+            let imagesHtml = '';
+            data.forEach(image => {
+                imagesHtml += `
+                    <div class="ss-photo">
+                        <div class="photo-wrap">
+                            <a target="_blank" href="https://shutterstock.7eer.net/P9oaj?subId1=freesvg&u=https://www.shutterstock.com/pic.mhtml?id=${image.id}">
+                                <div style="max-width:${image.assets.preview.width / 3}px; height:${image.assets.preview.height / 3}px; overflow:hidden; background-image: url('${image.assets.large_thumb.url}')"></div>
+                            </a>
+                        </div>
+                    </div>
+                `;
+            });
+            $('#shutterstock-images').html(imagesHtml);
+        }
+    });
+});
+</script>
+<script src="https://freesvg.org/js/jquerysession.min.js"></script>
+<script src="https://freesvg.org/js/frontend/frontend.min.js"></script>
+<script src="https://freesvg.org/js/select2/select2.min.js"></script>
+<script src="https://freesvg.org/js/share.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {     
+
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+      
+        $('.like').click(function(){    
+            var id = $(this).parents(".panel").data('id');
+            var c = $('#like'+id+'-bs3').html();
+          console.log(c);
+            var cObjId =id;
+            var cObj = $(this);
+             	poruka = $('.like-btn');
+          
+            $.ajax({
+               type:'POST',
+               url:'/like',
+               data:{id:id},
+               success:function(data){
+               
+                 if(data.success<1){
+                
+                    $('#like'+cObjId+'-bs3').html(parseInt(c)-1);
+                    $(cObj).removeClass("like-post");
+                  }else if(data.success>0){
+           
+                    $('#like'+cObjId+'-bs3').html(parseInt(c)+1);
+                    $(cObj).addClass("like-post");
+                  }
+                 else{
+             poruka.addClass("alert alert-error");
+             poruka.html(data.error).slideDown(1000);
+                  
+                  }
+               },
+               
+            });
+
+
+        });      
+      
+            $('.claim').click(function(){    
+            var id = $(this).attr('id');
+            var user=$(this).attr('user');
+            nota = $('#nota');
+             console.log(user);
+            var cObjId =id;
+            var cObj = $(this);
+                    
+            $.ajax({
+               type:'POST',
+               url:'/claim',
+               data:{id:id,
+                     user:user},
+               success:function(data){
+                            
+                 nota.addClass("alert alert-success");
+                 nota.html(data.success).slideDown(1000);
+            
+               },
+               
+            });
+
+
+        });     
+
+                                   
+    }); 
+</script>
+<script>
+$(document).ready(function()
+{
+
+ 
+
+
+    $("#ajax-contact-form").submit(function(e){
+		
+     event.preventDefault();
+            	note = $('#note');
+            var formData = {
+                email     : $('input[name=email]').val(),
+                 _token    : $('input[name=_token]').val()
+                    };
+
+            $.ajax({
+                type     : "POST",
+                url:   '/newsletter',
+                data     : formData,
+                cache    : false,
+
+                success  : function(data) {
+                 note.addClass("alert alert-success");
+                 note.html(data.success).slideDown(1000);
+                }
+            });
+
+
+            return false;
+
+        });
+  
+ 
+
+
+});
+
+</script>
+<script>
+$(document).ready(function() {
+    let svgSlug = "fiery-sun-icon-vector-graphics";  // Assuming the slug is available in this variable
+
+    $.ajax({
+        url: '/get-images/' + svgSlug,
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+            let imagesHtml = '';
+            data.forEach(image => {
+                imagesHtml += `
+                    <div class="ss-photo">
+                        <div class="photo-wrap">
+                            <a target="_blank" href="https://shutterstock.7eer.net/P9oaj?subId1=freesvg&u=https://www.shutterstock.com/pic.mhtml?id=${image.id}">
+                                <div style="max-width:${image.assets.preview.width / 3}px; height:${image.assets.preview.height / 3}px; overflow:hidden; background-image: url('${image.assets.large_thumb.url}')"></div>
+                            </a>
+                        </div>
+                    </div>
+                `;
+            });
+            $('#shutterstock-images').html(imagesHtml);
+        }
+    });
+});
+</script>
+<div class="js-cookie-consent cookie-consent">
+<span class="cookie-consent__message">
+Your experience on this site will be improved by allowing cookies.
+</span>
+<button class="js-cookie-consent-agree cookie-consent__agree btn btn-green btn-lg">
+Allow cookies
+</button>
+</div>
+<script>
+
+        window.laravelCookieConsent = (function () {
+
+            const COOKIE_VALUE = 1;
+            const COOKIE_DOMAIN = 'freesvg.org';
+
+            function consentWithCookies() {
+                setCookie('laravel_cookie_consent', COOKIE_VALUE, 7300);
+                hideCookieDialog();
+            }
+
+            function cookieExists(name) {
+                return (document.cookie.split('; ').indexOf(name + '=' + COOKIE_VALUE) !== -1);
+            }
+
+            function hideCookieDialog() {
+                const dialogs = document.getElementsByClassName('js-cookie-consent');
+
+                for (let i = 0; i < dialogs.length; ++i) {
+                    dialogs[i].style.display = 'none';
+                }
+            }
+
+            function setCookie(name, value, expirationInDays) {
+                const date = new Date();
+                date.setTime(date.getTime() + (expirationInDays * 24 * 60 * 60 * 1000));
+                document.cookie = name + '=' + value
+                    + ';expires=' + date.toUTCString()
+                    + ';domain=' + COOKIE_DOMAIN
+                    + ';path=/';
+            }
+
+            if (cookieExists('laravel_cookie_consent')) {
+                hideCookieDialog();
+            }
+
+            const buttons = document.getElementsByClassName('js-cookie-consent-agree');
+
+            for (let i = 0; i < buttons.length; ++i) {
+                buttons[i].addEventListener('click', consentWithCookies);
+            }
+
+            return {
+                consentWithCookies: consentWithCookies,
+                hideCookieDialog: hideCookieDialog
+            };
+        })();
+    </script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-15417342d295584c702","applicationID":"525287958","transactionName":"ZgMAZUFTWUJTUhcIXl9JI1JHW1hfHVcRDl9FAwxVHUFBVhxCCw5G","queueTime":0,"applicationTime":106,"atts":"SkQDEwlJSkw=","errorBeacon":"bam.nr-data.net","agent":""}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"85a8f7106df8a069","r":1,"version":"2024.2.1","token":"3c34c81fdd70440c825cf9135891f70a"}' crossorigin="anonymous"></script>
+</body>
+</html>
